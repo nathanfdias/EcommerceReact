@@ -20,13 +20,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 0.5%;
     font-size: 1.3rem;
 }
 
 .banner-description p {
     max-width: 60%;
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -36,8 +36,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: 280px;
-    background-color: rgba(211, 178, 118, 0.123);
+    background-color: white;
 }
 
 .home-main-first-box{
@@ -46,6 +45,7 @@
     justify-content: center;
     gap: 20px;
     align-items: center;
+    min-height: 280px;
 }
 
 .home-main-first-box-content {
@@ -59,8 +59,63 @@
     text-align: center;
     align-items: center;
     gap: 0.6rem;
+    margin-block: 20px;
 }
 
 .home-main-first-box-content p{
     width: 12rem;
+}
+
+.home-main-second-box{
+    width: 100pvw;
+    background-color: rgba(53, 51, 30, 0.301);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    min-height: 380px;
+}
+
+.home-main-second-box-content {
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(22, 22, 22);
+    height: 240px;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-block: 20px;
+}
+
+.home-main-second-box-content p{
+    width: 12rem;
+    font-size: 1rem;
+}
+
+.home-main-second-box-content h2{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .banner-description h1{
+        font-size: 1.3rem;
+    }
+
+    .banner-description p{
+        font-size: 1rem;
+        max-width: 88%;
+        padding: 20px;
+    }
+
+    .banner-description{
+        gap: 0px;
+        align-items: center;
+        text-align: center;
+    }
+
 }
