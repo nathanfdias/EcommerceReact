@@ -31,7 +31,7 @@ const Contact = (props) => {
             <footer>
                 <p id='div_footer_paragrafo'>residência serratec - 2020 - Loja Comércio Eletrônico | CNPJ: 000.000.000/0001-00</p>
             </footer>
-            {/* <Footer />   */}
+            <Footer />  
         </>
     );
 }
