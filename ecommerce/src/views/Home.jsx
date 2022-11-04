@@ -15,40 +15,40 @@ const Home = (props) => {
         <>
             <div className="home">
                 <section className="banner-container"></section>
-                <section class="top-section">
-                    <div class="top-section-txt">
-                        <h2 class="top-section-subtitle">Lorem ipsum</h2>
-                        <h1 class="top-section-title"> Dolor sit amem</h1>
+                <section className="top-section">
+                    <div className="top-section-txt">
+                        <h2 className="top-section-subtitle">Lorem ipsum</h2>
+                        <h1 className="top-section-title"> Dolor sit amem</h1>
 
-                        <p class="top-section-description">
+                        <p className="top-section-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit deserunt, quod necessitatibus laudantium perspiciatis enim provident eveniet et molestias veniam temporibus.
                         </p>
                     </div>
                 
-                    <img class="top-section-banner" src={computer3} alt="infocardbanner" />
+                    <img className="top-section-banner" src={computer3} alt="infocardbanner" />
                 </section>
 
-                <section class="top-cards">
-                    <div class="top-card123">
-                        <img class="top-card-img" src={shop1} alt="card1" />
+                <section className="top-cards">
+                    <div className="top-card123">
+                        <img className="top-card-img" src={shop1} alt="card1" />
 
-                        <p class="top-card-txt">
+                        <p className="top-card-txt">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. 
                         </p>
                     </div>
 
-                    <div class="top-card123">
-                        <img class="top-card-img" src={shop2} alt="card2" />
+                    <div className="top-card123">
+                        <img className="top-card-img" src={shop2} alt="card2" />
 
-                        <p class="top-card-txt">
+                        <p className="top-card-txt">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. 
                         </p>
                     </div>
 
-                    <div class="top-card123">
-                        <img class="top-card-img" src={shop3} alt="card3" />
+                    <div className="top-card123">
+                        <img className="top-card-img" src={shop3} alt="card3" />
 
-                        <p class="top-card-txt">
+                        <p className="top-card-txt">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. 
                         </p>
                     </div>
@@ -56,10 +56,10 @@ const Home = (props) => {
                 </section>
 
                 <section>
-                    <img class="middle-banner" src={noteD} alt="notebook.aberto" />
+                    <img className="middle-banner" src={noteD} alt="notebook.aberto" />
                 </section>
 
-                <section class="bottom-cards">
+                <section className="bottom-cards">
                     <div class="bottom-card-wrapper">
                         <div class="bottom-card123">
                             <img class="bottom-card-img" src={icon1} alt="bottom-card-img1" />
@@ -99,24 +99,6 @@ const Home = (props) => {
                     </div>
                 </section>
                 <Footer />
-                {/* <footer className='footer-page'>
-                    <div className='footer-container'>
-                        <ul className='footer-content-icons'>
-                            <li>
-                                <i class="fa fa-github"></i>
-                            </li>
-                            <li>
-                                <i class="fa fa-linkedin"></i>
-                            </li>
-                            <li>
-                                <i class="fa fa-instagram"></i>
-                            </li>
-                        </ul>
-                        <div className='footer-content-txt'>
-                            <p>Serratec Residência em TIC</p>
-                        </div>
-                    </div>
-                </footer> */}
             </div>
         </>
     )
