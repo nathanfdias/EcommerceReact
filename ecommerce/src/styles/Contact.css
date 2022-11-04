@@ -1,104 +1,88 @@
-* {
-    margin: 0;
-    padding: 0;
-
+.contato {
+  margin-top: 70px;
+  width: 100%;
+  height: 742px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  background-color: rgb(219, 219, 219);
 }
 
-header {
-    margin: 0;
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    color: aliceblue;
+.contato-titles {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-inline: 10px;
 }
 
-body {
-    background-color: rgb(245, 245, 245);
-
+.main-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-section {
+.main-form-title {
+  color: black;
+  width: 38%;
+}
+
+.main-form input,
+.main-form textarea {
+  width: 38%;
+  padding-left: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.main-form input {
+  height: 30px;
+}
+
+.main-button {
+  margin-top: 20px;
+  width: 38%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-v,
+.button-e {
+  padding-inline: 28px;
+  padding-block: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-v:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.button-e {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.button-v {
+  background-color: rgb(255, 255, 255);
+}
+
+.button-e:hover {
+    background-color: rgb(255, 255, 255);
     color: black;
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-    width: 700px;
-
-}
-
-section h2 {
-    margin-top: 100px;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 38px;
-}
-
-section p {
-    margin-top: 35px;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 35px;
-    text-align: justify;
-
-}
-
-#area {
-    margin-top: 70px;
-    margin-left: 25%;
-    width: 100%;
-    height: 700px;
-}
-
-#area p {
-    color: #BDBDBD;
-    font-size: 13px;
-}
-
-#area .input_nome {
-    margin-bottom: 20px;
-    width: 700px;
-    height: 40px;
-}
-
-#area .input_email {
-    margin-bottom: 20px;
-    width: 700px;
-    height: 40px;
-}
-
-#area .input_msg {
-    width: 700px;
-
-}
-
-#div_contato {
-    color: #BDBDBD;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#div_botao {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    width: 700px;
-
-}
-
-.botao_voltar {
-    color: #BDBDBD;
-    background-color: #fff;
-    border-color: #fff;
-    border-radius: 3px;
-    width: 90px;
-}
-
-.botao_enviar {
-    color: white;
-    background-color: black;
-    border-color: #fff;
-    border-radius: 3px;
-    width: 90px;
 }
