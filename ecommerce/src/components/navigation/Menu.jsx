@@ -31,13 +31,19 @@ const Menu = ( props ) => {
             <Link className="navbar__link" to="/">Home</Link>
         </li>
         <li className="navbar__item">
-            <Link className="navbar__link" to="/products">Products</Link>
+            <Link className="navbar__link" to="/produtos">Produtos</Link>
         </li>
         <li className="navbar__item">
-            <Link className="navbar__link" to="/contact">Contact</Link>
+            <Link className="navbar__link" to="/sobre">Sobre</Link>
         </li>
         <li className="navbar__item">
-            <Link className="navbar__link" to="/about">About</Link>
+            <Link className="navbar__link" to="/contato">Contato</Link>
+        </li>
+        <li className="navbar__item">
+            <Link className="navbar__link" to="/login"><i class="fa fa-user"></i></Link>
+        </li>
+        <li className="navbar__item">
+            <Link className="navbar__link" to="/cart"><i class="fa fa-shopping-cart"></i></Link>
         </li>
       </ul>
     </nav>

@@ -3,14 +3,18 @@ import Home from '../../views/Home';
 import About from '../../views/About';
 import Contact from '../../views/Contact';
 import Products from '../../views/Products';
+import Login from '../../views/Login';
+import Cart from '../../views/Cart';
 
 const Content = (props) => (
     <div>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/about" element={ <About />} />
+            <Route path="/produtos" element={<Products />} />
+            <Route path="/sobre" element={ <About />} />
+            <Route path="/contato" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cart" element={<Cart />} />
         </Routes>
     </div>
 );
