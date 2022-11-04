@@ -151,7 +151,7 @@
     font-size: 16px;
 }
 
-.footer-page{
+/* .footer-page{
     margin-top: 140px;
     width: 100%;
     height: 120px;
@@ -178,7 +178,7 @@
 
 .footer-content-txt{
     font-style: italic;
-}
+} */
 
 @media screen and (max-width: 414px) {
     .main-notebook,
