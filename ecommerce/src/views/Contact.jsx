@@ -30,10 +30,13 @@ const Contact = (props) => {
             setNome('')
             setEmail('')
             setMensagem('')
+
+            alert("Enviado com sucesso") 
             
         }, (erro)=>{
             console.log("ERRO:",erro)
         })
+
     }
 
     return (
