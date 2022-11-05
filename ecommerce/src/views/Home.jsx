@@ -1,16 +1,16 @@
 import '../styles/Home.css';
-import computer3 from '../assets/3-computer.png';
-import shop1 from '../assets/shop 1.png';
-import shop2 from '../assets/shop 2.png';
-import shop3 from '../assets/shop 3.png';
-import noteD from '../assets/noteaberto-desktop.png';
-import icon1 from '../assets/icon1.png';
-import icon2 from '../assets/icon2.png';
-import icon3 from '../assets/icon3.png';
-import icon4 from '../assets/icon4.png';
+import computer3 from '../assets/home/3-computer.png';
+import shop1 from '../assets/home/shop 1.png';
+import shop2 from '../assets/home/shop 2.png';
+import shop3 from '../assets/home/shop 3.png';
+import noteD from '../assets/home/noteaberto-desktop.png';
+import icon1 from '../assets/home/icon1.png';
+import icon2 from '../assets/home/icon2.png';
+import icon3 from '../assets/home/icon3.png';
+import icon4 from '../assets/home/icon4.png';
 import Footer from '../components/Footer';
 
-const Home = (props) => {
+const Home = () => {
     return(
         <>
             <div className="home">
