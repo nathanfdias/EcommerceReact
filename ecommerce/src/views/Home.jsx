@@ -60,38 +60,38 @@ const Home = () => {
                 </section>
 
                 <section className="bottom-cards">
-                    <div class="bottom-card-wrapper">
-                        <div class="bottom-card123">
-                            <img class="bottom-card-img" src={icon1} alt="bottom-card-img1" />
+                    <div className="bottom-card-wrapper">
+                        <div className="bottom-card123">
+                            <img className="bottom-card-img" src={icon1} alt="bottom-card-img1" />
 
-                            <p class="bottom-card-txt">
+                            <p className="bottom-card-txt">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
                             </p>
 
                         </div>
 
-                        <div class="bottom-card123">
-                            <img class="bottom-card-img" src={icon2} alt="bottom-card-img2" />
+                        <div className="bottom-card123">
+                            <img className="bottom-card-img" src={icon2} alt="bottom-card-img2" />
 
-                            <p class="bottom-card-txt">
+                            <p className="bottom-card-txt">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
                             </p>
 
                         </div>
 
-                        <div class="bottom-card123">
-                            <img class="bottom-card-img" src={icon3} alt="bottom-card-img3" />
+                        <div className="bottom-card123">
+                            <img className="bottom-card-img" src={icon3} alt="bottom-card-img3" />
 
-                            <p class="bottom-card-txt">
+                            <p className="bottom-card-txt">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
                             </p>
 
                         </div>
 
-                        <div class="bottom-card123">
-                            <img class="bottom-card-img" src={icon4} alt="bottom-card-img4" />
+                        <div className="bottom-card123">
+                            <img className="bottom-card-img" src={icon4} alt="bottom-card-img4" />
 
-                            <p class="bottom-card-txt">
+                            <p className="bottom-card-txt">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
                             </p>
 
