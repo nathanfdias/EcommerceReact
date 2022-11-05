@@ -1,4 +1,4 @@
-import '/React/EcommerceReact/ecommerce/src/index.css';
+import '../index.css';
 import Footer from '../components/Footer';
 import { useState } from "react";
 import LogoLogin from "../assets/LogoHomeB.png"
