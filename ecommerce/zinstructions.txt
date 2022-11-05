@@ -3,4 +3,5 @@
     + npm install react-intersection-observer --save
     + npm install react-router-dom@6
     + npm i font-awesome
+    + npm i styled-components
 }
