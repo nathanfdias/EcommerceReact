@@ -1,0 +1,68 @@
+.banner_container {
+    height: 70vh;
+    width: 100%;
+    background-image: url("../assets/banner_sobre.png");
+    background-size: cover;
+    background-position: 0rem;
+}
+
+.titulo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -200px 0 0 -70px;
+
+    text-align: center;
+    height: 100px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.sobre_pt_1 {
+    width: 100%;
+    height: 600px;
+    left: 0px;
+    top: 1982px;
+    background: linear-gradient(180deg, black 10%, #313131 50%, #606060 100%, #F0F0F0 80%);
+}
+
+.introducao {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 70px;
+}
+
+.mapa img {
+    max-width: 750px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    margin: 0px 0 0 250px;
+    border-radius: 30px;
+}
+
+.texto {
+    color: #F0F0F0;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sobre_pt_2 {
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.endereco{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border-style: outset;
+}
+
+.infos{
+    border-radius: 30px;
+    border-style: outset;
+}
