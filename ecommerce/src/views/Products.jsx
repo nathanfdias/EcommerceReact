@@ -7,9 +7,10 @@ import ProdutosBanner from '../components/ProdutosBanner'
 
 const Products = () => {
     // const [produto, setProduto] = useState([])
+    const location = useLocation();
     const [produtoFiltrado, setProdutoFiltrado] = useState("");
     const [url, setUrl] = useState("");
-    const { produtos, isFetching} = ProdutoAPI();
+    const { produtos, carregando} = ProdutoAPI();
 
     useEffect(() => {
         console.log(produtos)
@@ -36,11 +37,14 @@ const Products = () => {
                 <img className='img-produtos' src={item.fotoLink} alt="" />
                 <div className='produto-descript'>
                     <p>{item.nome}</p>
-                    <p>{`R$ ${item.valor},00`}</p>
+                    <p>{`R$ ${item.valor.toFixed(2)}`}</p>
                 </div>
-                <div className='buttons'>
+                <NavLink
+                    to={`${url}/${item.id}`}
+                    className="buttons"
+                  >
                     <button>Detalhes</button>
-                </div>
+                  </NavLink>
             </div>
           );
         })}
@@ -52,7 +56,7 @@ const Products = () => {
         return (
             <>
                 <div className='carregamento'>
-                    <h1>CARREGANDO TESTE</h1>
+                    <h1>CARREGANDO PRODUTOS</h1>
                 </div>
             </>
         );
@@ -68,7 +72,7 @@ const Products = () => {
                 </div>
                 <div className='produtos-container'>
                         {(() => {
-                            if (isFetching) {
+                            if (carregando) {
                                 return <Carregando />;
                             } else {
                                 return <ProdutoFiltrar />;

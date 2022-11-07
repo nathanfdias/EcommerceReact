@@ -14,7 +14,7 @@ const api = axios.create({
 });
 
 export function ProdutoAPI(url) {
-  const [isFetching, setIsFetching] = useState(true);
+  const [carregando, setCarregando] = useState(true);
   const [produtos, setProdutos] = useState([]);
   const [error, setError] = useState(null);
 
@@ -28,9 +28,9 @@ export function ProdutoAPI(url) {
         setError(error);
       })
       .finally(() => {
-        setIsFetching(false);
+        setCarregando(false);
       });
   }, []);
 
-  return { produtos, isFetching, error };
+  return { produtos, carregando, error };
 }

@@ -1,0 +1,173 @@
+/* ------------------------------- */
+
+.main-carrinho {
+  margin-top: 70px;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.carrinho-container {
+  width: 70%;
+  height: 78%;
+  display: flex;
+  flex-direction: row;
+}
+
+.items-content {
+  width: 66%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.items-content p {
+  border-top: 1px solid black;
+  color: transparent;
+  margin-block: 10px;
+}
+
+.teste {
+  color: black;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* ---------------------------------- */
+
+.produto-container-carrinho {
+    display: flex;
+    flex-direction: row;
+}
+
+.produto-content-carrinho {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.imagem {
+  width: 60px;
+  height: 60px;
+}
+
+.npme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.button-addrmv {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-addrmv p {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  padding: 0 10px ;
+}
+
+.button-addrmv button {
+  padding-inline: 10px;
+  padding-block: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.produto-valortotal{
+    font-size: 0.8rem;
+}
+
+.produto-excluir button{
+    padding: 4px 7px;
+    border-radius: 50px;
+    font-size: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    border: none;
+}
+
+/* ------------------------------------- */
+
+.dados-container {
+  width: 34%;
+  height: 100%;
+  background-color: rgb(161, 161, 161);
+  color: black;
+}
+
+.dados-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    padding: 10%;
+}
+
+.title p{
+    color: transparent;
+    border-bottom: 1px solid black;
+}
+
+.dados-valores {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-style: oblique;
+}
+
+.dados-buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dados-buttons button{
+    width: 100px;
+    padding-block: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:1200px) {
+  .carrinho-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items-content{
+    width: 100%;
+  }
+  
+  .dados-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  .dados-content{
+    padding: 14px;
+  }
+}

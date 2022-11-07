@@ -5,6 +5,7 @@ import Contact from '../../views/Contact';
 import Products from '../../views/Products';
 import Login from '../../views/Login';
 import Cart from '../../views/Cart';
+import Produto from '../../views/produtoUnico/Produto';
 
 
 const Content = (props) => (
@@ -12,6 +13,7 @@ const Content = (props) => (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/produtos" element={<Products />} />
+            <Route path="/produtos/:id" element={<Produto />}  />
             <Route path="/sobre" element={ <About />} />
             <Route path="/contato" element={<Contact />} />
             <Route path="/login" element={<Login />} />

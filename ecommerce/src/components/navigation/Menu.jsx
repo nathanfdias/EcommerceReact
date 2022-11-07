@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import "../../styles/Menu.css";
 import { FiMenu, FiX } from "react-icons/fi";
+import LogoLogin from "../../assets/LogoHomeB.png";
 
 const Menu = ( props ) => {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -12,7 +13,7 @@ const Menu = ( props ) => {
 
   return (
     <nav className="navbar">
-      <span className="navbar__logo">Tech Shop</span>
+      <span className="navbar__logo"><img src={LogoLogin} alt="" /></span>
       {menuClicked ? (
         <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       ) : (

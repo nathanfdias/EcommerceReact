@@ -12,27 +12,29 @@ body, html {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 70px;
 }
 
 .container-login {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 15px;
-  background-color: #fff;
+  /* background-image: url(../assets/login/background-login.jpg); */
+  background-size: cover;
+  /* background-color: #fff;
   background: -webkit-linear-gradient(to left, #363636, #fff);
   background: -o-linear-gradient(to left, #fff, #393939);
   background: -moz-linear-gradient(to left,#363737, #fff);
-  background: linear-gradient(to left, #fff,#d6d4d4);
+  background: linear-gradient(to left, #fff,#d6d4d4); */
 }
 
 .wrap-login {
-  width: 390px;
-  background-color: rgb(14, 12, 12);
+  width: 490px;
+  background-color: rgba(14, 12, 12, 0.808);
   border-radius: 10%;
   overflow: hidden;
   padding: 45px 55px 33px 55px;
