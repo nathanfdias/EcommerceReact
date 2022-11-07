@@ -41,6 +41,14 @@ const Produto = () => {
               <button>+</button>
             </div> */}
             <div>
+              <div className="buttons-links-pages">
+                <button className="button-links" >
+                  <NavLink to="/produtos" className="txt-button-links">Continuar Comprando</NavLink>
+                </button>
+                <button className="button-links" >
+                  <NavLink to="/cart" className="txt-button-links">Ir para carrinho</NavLink>
+                </button>
+              </div>
               <button
                 className="button-carrinho"
                 onClick={() =>

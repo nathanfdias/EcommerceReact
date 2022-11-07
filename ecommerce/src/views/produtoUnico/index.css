@@ -91,6 +91,29 @@
     cursor: pointer;
 }
 
+.buttons-links-pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-links{
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+}
+
+.txt-button-links{
+    color: white;
+}
+
+.buttons-links-pages button .navLink{
+    background-color: brown;
+}
+
 @media screen and (max-width:850px) {
     .img-produto{
         height: 200px;

@@ -46,6 +46,9 @@ const Menu = ( props ) => {
         <li className="navbar__item">
             <Link className="navbar__link" to="/cart"><i class="fa fa-shopping-cart"></i></Link>
         </li>
+        <li className="navbar__item">
+            <Link className="navbar__link" to="/adm"><i class="fa fa-gear"></i></Link>
+        </li>
       </ul>
     </nav>
   );
