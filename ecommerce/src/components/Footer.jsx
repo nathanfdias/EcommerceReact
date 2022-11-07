@@ -7,13 +7,13 @@ const Footer = () => {
                     <div className='footer-container'>
                         <ul className='footer-content-icons'>
                             <li>
-                                <i class="fa fa-github"></i>
+                                <i className="fa fa-github"></i>
                             </li>
                             <li>
-                                <i class="fa fa-linkedin"></i>
+                                <i className="fa fa-linkedin"></i>
                             </li>
                             <li>
-                                <i class="fa fa-instagram"></i>
+                                <i className="fa fa-instagram"></i>
                             </li>
                         </ul>
                         <div className='footer-content-txt'>
