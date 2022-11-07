@@ -17,11 +17,11 @@ const Home = () => {
                 <section className="banner-container"></section>
                 <section className="top-section">
                     <div className="top-section-txt">
-                        <h2 className="top-section-subtitle">Lorem ipsum</h2>
-                        <h1 className="top-section-title"> Dolor sit amem</h1>
+                        <h2 className="top-section-subtitle">Aqui você encontra os</h2>
+                        <h1 className="top-section-title"> melhores produtos </h1>
 
                         <p className="top-section-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit deserunt, quod necessitatibus laudantium perspiciatis enim provident eveniet et molestias veniam temporibus.
+                            Com um atendimento exclusivo e personalizado, tornando acessível produtos de qualidade e com baixo custo, fazendo seu atendimento até a entrega uma incrivel experiência!  
                         </p>
                     </div>
                 
@@ -33,7 +33,7 @@ const Home = () => {
                         <img className="top-card-img" src={shop1} alt="card1" />
 
                         <p className="top-card-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. 
+                            Loja Virtual com atendimento personalizado, onde você encontra os melhores produtos com os melhores preços.  
                         </p>
                     </div>
 
@@ -41,7 +41,7 @@ const Home = () => {
                         <img className="top-card-img" src={shop2} alt="card2" />
 
                         <p className="top-card-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. 
+                            Enviamos para todo o Brasil, sempre bem embalado, com transportadoras seguras e dentro do prazo estimado. 
                         </p>
                     </div>
 
@@ -49,7 +49,7 @@ const Home = () => {
                         <img className="top-card-img" src={shop3} alt="card3" />
 
                         <p className="top-card-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. 
+                            Trabalhamos com diversas formas de pagamento, com total segurança. 
                         </p>
                     </div>
 
@@ -65,7 +65,7 @@ const Home = () => {
                             <img className="bottom-card-img" src={icon1} alt="bottom-card-img1" />
 
                             <p className="bottom-card-txt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
+                                Pagamento com cartão de crédito, boleto bancário e Pix.
                             </p>
 
                         </div>
@@ -74,7 +74,7 @@ const Home = () => {
                             <img className="bottom-card-img" src={icon2} alt="bottom-card-img2" />
 
                             <p className="bottom-card-txt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
+                                O pagamento é feito com total segurança no tráfego de dados, tudo com controle do sistema da loja virtual.  
                             </p>
 
                         </div>
@@ -83,7 +83,7 @@ const Home = () => {
                             <img className="bottom-card-img" src={icon3} alt="bottom-card-img3" />
 
                             <p className="bottom-card-txt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
+                             Todos os produtos vão com garantia, e prazo para troca ou devolução de 30 dias.   
                             </p>
 
                         </div>
@@ -92,7 +92,7 @@ const Home = () => {
                             <img className="bottom-card-img" src={icon4} alt="bottom-card-img4" />
 
                             <p className="bottom-card-txt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod enim non dui fringilla interdum.  
+                            Qualquer informação coletada no site, respeita a sua privacidade, solicitamos apenas informações pessoais para fornecer um serviço de qualidade.  
                             </p>
 
                         </div>
