@@ -45,7 +45,7 @@ const Contact = (props) => {
                 <div className='wrap-contato'>
                     <div className='contato-titles'>
                         <h2 className='title'>Entre em contato</h2>
-                        <p className='sub-title'>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. </p>
+                        <p className='sub-title'>Muito obrigado(a) por seu contato. O seu feedback irá nos ajudar muito a aprimorar nossos produtos. A sua opinião é muito importante para a TechShop. Por favor, entre em contato sempre que precisar. </p>
                     </div>
                     <div className='main-form' onSubmit={sendEmail}>
                         <label className='main-form-title' for='nome'><p>Nome</p></label>
@@ -76,7 +76,6 @@ const Contact = (props) => {
                             value={mensagem}
                         />
                         <div className='main-button'>
-                            <button className='button-v'>VOLTAR</button>
                             <button className='button-e' onClick={sendEmail}>ENVIAR</button>
                         </div>
                     </div>
