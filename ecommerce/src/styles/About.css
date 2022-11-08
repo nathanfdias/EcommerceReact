@@ -1,3 +1,8 @@
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
 .banner_container {
     height: 70vh;
     width: 100%;
@@ -16,29 +21,32 @@
     height: 100px;
     font-size: 30px;
     color: #FFFFFF;
+    font-style: italic;
 }
 
 .sobre_pt_1 {
     width: 100%;
-    height: 600px;
+    min-height: 500px;
     left: 0px;
     top: 1982px;
     background: linear-gradient(180deg, black 10%, #313131 50%, #606060 100%, #F0F0F0 80%);
 }
 
 .introducao {
-    margin-left: 100px;
-    margin-right: 100px;
     padding: 70px;
 }
 
+.mapa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mapa img {
-    max-width: 750px;
-    max-height: 700px;
-    width: auto;
-    height: auto;
-    margin: 0px 0 0 250px;
-    border-radius: 30px;
+    width: 40%;
+    height: 240px;
+    margin-bottom: 40px;
 }
 
 .texto {
@@ -49,20 +57,16 @@
 }
 
 .sobre_pt_2 {
-    color: black;
+    color: white;
     text-align: center;
     width: 100%;
-    height: 50px;
+    height: 140px;
+    font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #606060;
+    box-shadow: #000000;
 }
 
-.endereco{
-    margin-top: 70px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    border-style: outset;
-}
 
-.infos{
-    border-radius: 30px;
-    border-style: outset;
-}

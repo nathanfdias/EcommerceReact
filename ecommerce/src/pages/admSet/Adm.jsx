@@ -20,7 +20,7 @@ const Adm = () => {
                             </NavLink> 
                         </li>
                         <li>
-                           <NavLink>
+                           <NavLink to="/produtoadm">
                                 <p className="links-adm">PRODUTO</p>
                             </NavLink> 
                         </li>
