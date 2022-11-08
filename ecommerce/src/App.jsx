@@ -4,6 +4,8 @@ import './App.css';
 import Content from './components/navigation/Content';
 import Menu from './components/navigation/Menu';
 
+import AppRoutes from './components/navigation/AppRoutes';
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,6 +14,7 @@ function App() {
       <Router>
         <Menu />
         <Content />
+        <AppRoutes/>
       </Router>
     </div>
   )
