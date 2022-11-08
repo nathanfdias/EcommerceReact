@@ -51,14 +51,17 @@ const Produto = () => {
               </div>
               <button
                 className="button-carrinho"
-                onClick={() =>
+                onClick={() => {
                   handleAddItemToCart(
                     produtos.id,
                     produtos.fotoLink,
                     produtos.nome,
                     produtos.valor
-                  )
+                  ) 
+                  alert(`Produto: ${produtos.nome} adicionado ao carrinho!`);
+                  }
                 }
+                
               >
                 <NavLink className="navlink">Adicionar ao Carrinho</NavLink>
               </button>
