@@ -10,7 +10,7 @@ const Adm = () => {
                 <div className="navbar-adm">
                     <ul>
                         <li>
-                           <NavLink>
+                           <NavLink to="/clienteadm">
                                 <p className="links-adm">CLIENTE</p>
                             </NavLink> 
                         </li>
@@ -20,19 +20,19 @@ const Adm = () => {
                             </NavLink> 
                         </li>
                         <li>
-                            <h2 className="titulo-adm">AdmControl</h2>
-                        </li>
-                        <li>
                            <NavLink>
                                 <p className="links-adm">PRODUTO</p>
                             </NavLink> 
                         </li>
                         <li>
-                           <NavLink>
+                           <NavLink to="/funcionarioadm">
                                 <p className="links-adm">FUNCIONARIO</p>
                             </NavLink> 
                         </li>
                     </ul>
+                </div>
+                <div className="welcome-adm">
+                    <h1>Bem vindo a Central Adm</h1>
                 </div>
             </div>
             <Footer />

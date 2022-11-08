@@ -1,17 +1,17 @@
 import axios from "axios";
 import React, { useState } from "react";
 import {APIResponse} from '../../../services/apiPadrao'
-import './catAdm.css';
 import { NavLink} from "react-router-dom";
+import '../categoria/catAdm.css';
 
-const CategoriaAdm = () => {
-    const { data, isFetching, error } = APIResponse("/categoria");
+const ClienteAdm = () => {
+    const { data, isFetching, error } = APIResponse("/cliente");
     const [errorS, setErrorS] = useState(null);
     const [response, setResponse] = useState(null);
 
-    const deletarCategoria = (id) => {
+    const deletarCliente = (id) => {
         axios
-          .delete(`https://ecommerce-api-react-serratec.herokuapp.com/categoria/${id}`)
+          .delete(`https://ecommerce-api-react-serratec.herokuapp.com/cliente/${id}`)
           .then((response) => {
             setResponse(response.status);
           })
@@ -46,15 +46,21 @@ const CategoriaAdm = () => {
                             <div className="catadm-content">
                                 <h2>Nome: {x.nome}</h2>
                                 <p className="card-text lead">
-                                Descrição: {x.descricao}
+                                Usuario: {x.usuario}
+                                </p>
+                                <p className="card-text lead">
+                                CPF: {x.cpf}
+                                </p>
+                                <p className="card-text lead">
+                                Email: {x.email}
                                 </p>
                                 <div className="buttons-cmd">
                                     <button>
-                                        <NavLink to={`/categoriaadmput/${x.id}`}>
+                                        <NavLink to={`/clienteadmput/${x.id}`}>
                                             edit
                                         </NavLink>    
                                     </button>
-                                    <button onClick={()=>deletarCategoria(x.id)}>delete</button>
+                                    <button onClick={()=>deletarCliente(x.id)}>delete</button>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +79,7 @@ const CategoriaAdm = () => {
                             <h2>Voltar a Central</h2>
                         </div>
                     </NavLink>
-                    <NavLink to="/categoriaadmpost">
+                    <NavLink to="/clienteadmpost">
                         <div>
                             <h2>Adicionar Novo</h2>
                         </div>
@@ -93,4 +99,4 @@ const CategoriaAdm = () => {
     )
 }
 
-export default CategoriaAdm;
+export default ClienteAdm;

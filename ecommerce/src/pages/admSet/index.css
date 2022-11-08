@@ -26,3 +26,24 @@
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
+
+.welcome-adm{
+    height: 60vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+@media  screen and (max-width: 540px){
+    .links-adm{
+        font-size: 0.9rem;
+    }
+
+    .navbar-adm ul{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+}
