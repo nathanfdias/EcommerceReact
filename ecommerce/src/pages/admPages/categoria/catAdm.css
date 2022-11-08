@@ -84,6 +84,8 @@
 .form-edit-content input{
     width: 200px;
     height: 30px;
+    border: 1px solid black;
+    color: black
 }
 
 .form-edit-content button{
