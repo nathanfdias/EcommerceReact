@@ -15,6 +15,9 @@ import ClienteAdmPut from "../../pages/admPages/cliente/PutCliente"
 import ClienteAdmPost from "../../pages/admPages/cliente/PostCliente"
 import FuncionarioAdm from '../../pages/admPages/funcionario/funcionario';
 import FuncionarioAdmPut from "../../pages/admPages/funcionario/PutFuncionario"
+import FuncionarioAdmPost from "../../pages/admPages/funcionario/PostFuncionario"
+import ProdutoAdm from '../../pages/admPages/produto/produto';
+import ProdutoAdmPut from "../../pages/admPages/produto/PutProduto"
 
 const Content = (props) => (
   <div>
@@ -35,6 +38,9 @@ const Content = (props) => (
       <Route path="/clienteadmpost" element={<ClienteAdmPost/>}></Route>
       <Route path="/funcionarioadm" element={<FuncionarioAdm/>}></Route>
       <Route path="/funcionarioadmput/:id" element={<FuncionarioAdmPut/>}></Route>
+      <Route path="/funcionarioadmpost" element={<FuncionarioAdmPost/>}></Route>
+      <Route path="/produtoadm" element={<ProdutoAdm/>}></Route>
+      <Route path="/produtoadmput/:id" element={<ProdutoAdmPut/>}></Route>
     </Routes>
   </div>
 );

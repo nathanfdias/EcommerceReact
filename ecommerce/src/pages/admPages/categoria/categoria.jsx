@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {APIResponse} from '../../../services/apiPadrao'
 import './catAdm.css';
 import { NavLink} from "react-router-dom";
+import Footer from '../../../components/Footer'
 
 const CategoriaAdm = () => {
     const { data, isFetching, error } = APIResponse("/categoria");
@@ -49,12 +50,12 @@ const CategoriaAdm = () => {
                                 Descrição: {x.descricao}
                                 </p>
                                 <div className="buttons-cmd">
-                                    <button>
-                                        <NavLink to={`/categoriaadmput/${x.id}`}>
+                                    <button className="buttons-cmd-child">
+                                        <NavLink className="buttons-cmd-child" to={`/categoriaadmput/${x.id}`}>
                                             edit
                                         </NavLink>    
                                     </button>
-                                    <button onClick={()=>deletarCategoria(x.id)}>delete</button>
+                                    <button className="buttons-cmd-child" onClick={()=>deletarCategoria(x.id)}>delete</button>
                                 </div>
                             </div>
                         </div>
@@ -67,15 +68,16 @@ const CategoriaAdm = () => {
     return(
         <>
             <div className="categoriaAdm-main">
+                <h1 className="title-adm-section">Categoria</h1>
                 <div className="categoriaAdm-title">
                     <NavLink to="/adm">
                         <div>                    
-                            <h2>Voltar a Central</h2>
+                            <h2 className="links-move">Voltar a Central</h2>
                         </div>
                     </NavLink>
                     <NavLink to="/categoriaadmpost">
                         <div>
-                            <h2>Adicionar Novo</h2>
+                            <h2 className="links-move">Adicionar Novo</h2>
                         </div>
                     </NavLink>
                 </div>
@@ -89,6 +91,7 @@ const CategoriaAdm = () => {
                     })()}
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

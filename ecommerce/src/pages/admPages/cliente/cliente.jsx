@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {APIResponse} from '../../../services/apiPadrao'
 import { NavLink} from "react-router-dom";
 import '../categoria/catAdm.css';
+import Footer from '../../../components/Footer'
 
 const ClienteAdm = () => {
     const { data, isFetching, error } = APIResponse("/cliente");
@@ -55,12 +56,12 @@ const ClienteAdm = () => {
                                 Email: {x.email}
                                 </p>
                                 <div className="buttons-cmd">
-                                    <button>
-                                        <NavLink to={`/clienteadmput/${x.id}`}>
+                                    <button className="buttons-cmd-child">
+                                        <NavLink className="buttons-cmd-child" to={`/clienteadmput/${x.id}`}>
                                             edit
                                         </NavLink>    
                                     </button>
-                                    <button onClick={()=>deletarCliente(x.id)}>delete</button>
+                                    <button className="buttons-cmd-child" onClick={()=>deletarCliente(x.id)}>delete</button>
                                 </div>
                             </div>
                         </div>
@@ -73,15 +74,16 @@ const ClienteAdm = () => {
     return(
         <>
             <div className="categoriaAdm-main">
+                <h1 className="title-adm-section">Cliente</h1>
                 <div className="categoriaAdm-title">
                     <NavLink to="/adm">
                         <div>                    
-                            <h2>Voltar a Central</h2>
+                            <h2 className="links-move">Voltar a Central</h2>
                         </div>
                     </NavLink>
                     <NavLink to="/clienteadmpost">
                         <div>
-                            <h2>Adicionar Novo</h2>
+                            <h2 className="links-move">Adicionar Novo</h2>
                         </div>
                     </NavLink>
                 </div>
@@ -95,6 +97,7 @@ const ClienteAdm = () => {
                     })()}
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

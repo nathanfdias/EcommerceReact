@@ -38,13 +38,13 @@ const Products = () => {
                 <div className='produto-descript'>
                     <p>{item.nome}</p>
                     <p>{`R$ ${item.valor.toFixed(2)}`}</p>
+                    <NavLink
+                        to={`${url}/${item.id}`}
+                        className="buttons"
+                    >
+                        <button>Detalhes</button>
+                    </NavLink>
                 </div>
-                <NavLink
-                    to={`${url}/${item.id}`}
-                    className="buttons"
-                  >
-                    <button>Detalhes</button>
-                  </NavLink>
             </div>
           );
         })}

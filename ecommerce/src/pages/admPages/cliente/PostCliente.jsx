@@ -23,7 +23,7 @@ const PostCliente = () => {
         e.preventDefault();
     
         axios
-          .put(`https://ecommerce-api-react-serratec.herokuapp.com/cliente`, {
+          .post(`https://ecommerce-api-react-serratec.herokuapp.com/cliente`, {
             cpf: cpf,
             dataNascimento: `${dataNascimento}T18:46:19Z`,
             email: email,
@@ -45,6 +45,8 @@ const PostCliente = () => {
           .catch((error) => {
             setErrorS(error);
           });
+
+          console.log(errorS)
     
       };
 
@@ -91,7 +93,7 @@ const PostCliente = () => {
                 </div>
                 <div className="form-edit-content">
                   <h3>Data Nascimento:</h3>
-                  <input type="text"
+                  <input type="date"
                     value={dataNascimento}
                     minLength="6"
                     maxLength="11"
