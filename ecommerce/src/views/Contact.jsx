@@ -48,26 +48,28 @@ const Contact = (props) => {
                         <p className='sub-title'>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. </p>
                     </div>
                     <div className='main-form' onSubmit={sendEmail}>
-                        <div className='main-form-title'><p>Nome</p></div>
+                        <label className='main-form-title' for='nome'><p>Nome</p></label>
                         <input
+                            id='nome'
                             className='input_nome' required
                             type="text"
                             placeholder='NOME'
                             onChange={(e) => setNome(e.target.value)}
                             value={nome}
                         />
-                        <div className='main-form-title'><p>E-mail</p></div>
+                        <label className='main-form-title' for='email'>E-mail</label>
                         <input
+                            id='email'
                             className='input_email' required
                             type="text"
                             placeholder='EMAIL'
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
                         />
-                        <div className='main-form-title'><p>Mensagem</p></div>
+                        <label className='main-form-title' for='mensagem'><p>Mensagem</p></label>
                         <textarea className='input_msg'
                             maxLength={500}
-                            name="mensagem"
+                            id="mensagem"
                             cols="20" rows="12"
                             placeholder="MENSAGEM"
                             onChange={(e) => setMensagem(e.target.value)}
