@@ -77,8 +77,8 @@ const Cart = () => {
                   <h2>Total: R$ {totalPrice}</h2>
                 </div>
                 <div className="dados-buttons">
-                  <button onClick={clearCart}>Limpar</button>
-                  <button>Comprar</button>
+                  <button onClick={clearCart}>LIMPAR</button>
+                  <button>COMPRAR</button>
                 </div>
               </div>
             </div>
