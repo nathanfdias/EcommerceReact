@@ -1,14 +1,11 @@
 import { BrowserRouter, Routes, Router, Navigate, Route } from "react-router-dom";
 import Home from "../../views/Home";
-import Login from "../../views/Login";
 import { useContext } from "react";
 import { AuthProvider, AuthContext } from "../../context/auth";
-
 import Adm from "../../pages/admSet/Adm";
 import About from "../../views/About";
 import Cart from "../../views/Cart";
 import Contact from "../../views/Contact";
-
 import Products from "../../views/Products";
 import Produto from "../../views/produtoUnico/Produto";
 import CategoriaAdm from '../../pages/admPages/categoria/categoria';
@@ -22,6 +19,8 @@ import FuncionarioAdmPut from "../../pages/admPages/funcionario/PutFuncionario"
 import FuncionarioAdmPost from "../../pages/admPages/funcionario/PostFuncionario"
 import ProdutoAdm from '../../pages/admPages/produto/produto';
 import ProdutoAdmPut from "../../pages/admPages/produto/PutProduto"
+import Login from "../../pages/Login/index.jsx";
+import { Register } from "../../pages/Register";
 
 const AppRoutes = () => {
 
@@ -39,15 +38,13 @@ const AppRoutes = () => {
     return (
         <AuthProvider>
             <Routes>
-                <Route exact path="/login" element={<Login />} />
+                <Route exact path="/login" element={<Login/>} />
+                <Route path="/register" element={<Register/>} />
                 <Route exact path="/" element={<Home />} />
-
-
                 <Route path="/produtos" element={<Products />} />
                 <Route path="/produtos/:id" element={<Produto />} />
                 <Route path="/sobre" element={<About />} />
                 <Route path="/contato" element={<Contact />} />
-
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/adm" element={<Private><Adm /></Private>} />
                 <Route path="/categoriaadm" element={<Private><CategoriaAdm /></Private>}></Route>
@@ -61,8 +58,6 @@ const AppRoutes = () => {
                 <Route path="/funcionarioadmpost" element={<Private><FuncionarioAdmPost /></Private>}></Route>
                 <Route path="/produtoadm" element={<Private><ProdutoAdm /></Private>}></Route>
                 <Route path="/produtoadmput/:id" element={<Private><ProdutoAdmPut /></Private>}></Route>
-
-
             </Routes>
         </AuthProvider>
     );

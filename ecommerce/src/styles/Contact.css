@@ -121,6 +121,16 @@
 
 }
 
+input, textarea{
+  color: white;
+  border: 1px solid;
+}
+
+input:hover,
+textarea:hover{
+  border-color: rgb(169 169 169);
+}
+
 
 
 
