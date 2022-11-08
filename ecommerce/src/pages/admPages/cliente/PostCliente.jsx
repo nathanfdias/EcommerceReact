@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { NavLink} from "react-router-dom";
-import '../categoria/catAdm.css';
+import './clienteadm.css';
 
 const PostCliente = () => {
     const [errorS, setErrorS] = useState(null);
@@ -52,9 +52,9 @@ const PostCliente = () => {
 
       return (
         <>
-          <div className="categoriaAdm-main">
+          <div className="clienteAdm-main">
             <div className="catadm-container">
-              <form className="form-edit" onSubmit={(e) => cadastrar(e)}>
+              <form className="form-cliente-edit" onSubmit={(e) => cadastrar(e)}>
                 <div className="form-edit-content">
                   <h3>Nome:</h3>
                   <input type="text"
@@ -161,17 +161,19 @@ const PostCliente = () => {
                     required
                     onChange={(e) => setComplemento(e.target.value)} />
                 </div>
+              </form>
+              <div className="form-edit-content-cliente">
                 <div className="form-edit-content">
-                  <button type="submit">Cadastrar</button>
+                  <button className="buttons-cmd-child" type="submit">Cadastrar</button>
                 </div>
                 <div className="form-edit-content">
-                  <button>
-                      <NavLink to="/clienteadm">
+                  <button className="buttons-cmd-child">
+                      <NavLink  className="buttons-cmd-child" to="/clienteadm">
                         Voltar
                       </NavLink>
                     </button>
                 </div>
-              </form>
+              </div>
               {(() => {
                 if (apiResponse?.status === 201) {
                   return (

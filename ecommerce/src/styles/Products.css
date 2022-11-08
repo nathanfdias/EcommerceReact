@@ -155,4 +155,8 @@
   .produto-descript{
     width: 180px;
   }
+
+  .buttons button{
+    padding-inline: 30px;
+  }
 }

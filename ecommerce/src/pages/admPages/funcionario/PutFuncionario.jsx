@@ -41,17 +41,19 @@ const PutFuncionario = () => {
                     required
                     onChange={(e) => setNome(e.target.value)}/>
                 </div>
+              </form>
+              <div className="form-edit-content-cliente">
                 <div className="form-edit-content">
-                  <button type="submit">Enviar</button>
+                  <button className="buttons-cmd-child" type="submit">Cadastrar</button>
                 </div>
                 <div className="form-edit-content">
-                  <button>
-                      <NavLink to="/funcionarioadm">
+                  <button className="buttons-cmd-child">
+                      <NavLink  className="buttons-cmd-child" to="/funcionarioadm">
                         Voltar
                       </NavLink>
                     </button>
                 </div>
-              </form>
+              </div>
               {(() => {
                 if (apiResponse?.status === 200) {
                   return (

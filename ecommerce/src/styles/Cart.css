@@ -106,7 +106,7 @@
 .dados-container {
   width: 34%;
   height: 100%;
-  background-color: rgb(161, 161, 161);
+  background-color: rgba(161, 161, 161, 0.521);
   color: black;
 }
 
@@ -132,7 +132,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-style: oblique;
 }
 
 .dados-buttons {
@@ -147,7 +146,7 @@
     width: 100px;
     padding-block: 10px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgb(3, 3, 3);
     color: white;
     border: none;
 }
