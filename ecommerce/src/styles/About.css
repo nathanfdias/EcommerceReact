@@ -8,7 +8,7 @@
     width: 100%;
     background-image: url("../assets/banner_sobre.png");
     background-size: cover;
-    background-position: 0rem;
+    background-position: center;
 }
 
 .titulo {

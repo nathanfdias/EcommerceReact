@@ -51,11 +51,11 @@ const PostFuncionario = () => {
           </form>
           <div className="form-edit-content-cliente">
                 <div className="form-edit-content">
-                  <button className="buttons-cmd-child" type="submit">Cadastrar</button>
+                  <button className="buttons-cmd-child" type="submit" onClick={cadastrar}>Cadastrar</button>
                 </div>
                 <div className="form-edit-content">
                   <button className="buttons-cmd-child">
-                      <NavLink  className="buttons-cmd-child" to="/clienteadm">
+                      <NavLink  className="buttons-cmd-child" to="/funcionarioadm">
                         Voltar
                       </NavLink>
                     </button>

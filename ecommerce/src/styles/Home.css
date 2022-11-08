@@ -10,7 +10,8 @@
     /* linear-gradient(rgba(0, 0, 0, 0.24), */
     /* rgba(0, 0, 0, 0.5)) */
     background-size: cover;
-    background-position: 0rem;
+    background-position: center;
+    
 }
 
 /* -------------------------------------------- */
