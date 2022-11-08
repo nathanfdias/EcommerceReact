@@ -132,6 +132,8 @@ body, html {
 
 .login-form-btn:hover {
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .text-center {
