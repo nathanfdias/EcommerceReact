@@ -21,7 +21,7 @@ import ProdutoAdmPut from "../../pages/admPages/produto/PutProduto"
 
 const Content = (props) => (
   <div>
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/produtos" element={<Products />} />
       <Route path="/produtos/:id" element={<Produto />} />
@@ -41,7 +41,7 @@ const Content = (props) => (
       <Route path="/funcionarioadmpost" element={<FuncionarioAdmPost/>}></Route>
       <Route path="/produtoadm" element={<ProdutoAdm/>}></Route>
       <Route path="/produtoadmput/:id" element={<ProdutoAdmPut/>}></Route>
-    </Routes>
+    </Routes> */}
   </div>
 );
 
