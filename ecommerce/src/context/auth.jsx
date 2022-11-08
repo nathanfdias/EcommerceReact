@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
         if (password === "admin"&& email ==="admin@admin") {
             setUser({ loggedUser });
-            navigate("/");
+            navigate("/adm");
         }
 
     };

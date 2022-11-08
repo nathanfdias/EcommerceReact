@@ -23,8 +23,14 @@ const PostCategoria = () => {
         .catch((error) => {
           setErrorS(error);
         });
+
+        console.log(errorS);
   
     };
+
+    const teste = () => {
+      console.log("teste")
+    }
 
     return (
         <>
@@ -52,11 +58,11 @@ const PostCategoria = () => {
               </form>
               <div className="form-edit-content-cliente">
                 <div className="form-edit-content">
-                  <button className="buttons-cmd-child" type="submit">Cadastrar</button>
+                  <button className="buttons-cmd-child" type="submit" onClick={cadastrar}>Cadastrar</button>
                 </div>
                 <div className="form-edit-content">
                   <button className="buttons-cmd-child">
-                      <NavLink  className="buttons-cmd-child" to="/clienteadm">
+                      <NavLink  className="buttons-cmd-child" to="/categoriaadm">
                         Voltar
                       </NavLink>
                     </button>

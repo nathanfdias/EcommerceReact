@@ -33,6 +33,7 @@
   background-image: url(../assets/produtos/backgroundproduto.png);
   background-size: cover;
   margin-bottom: 50px;
+  background-position: center;
 }
 
 .main-titulo{

@@ -4,7 +4,7 @@ import About from "../../views/About";
 import Cart from "../../views/Cart";
 import Contact from "../../views/Contact";
 import Home from "../../views/Home";
-import Login from "../../views/Login";
+import Login from "../../pages/Login/index";
 import Products from "../../views/Products";
 import Produto from "../../views/produtoUnico/Produto";
 import CategoriaAdm from '../../pages/admPages/categoria/categoria';
@@ -18,6 +18,7 @@ import FuncionarioAdmPut from "../../pages/admPages/funcionario/PutFuncionario"
 import FuncionarioAdmPost from "../../pages/admPages/funcionario/PostFuncionario"
 import ProdutoAdm from '../../pages/admPages/produto/produto';
 import ProdutoAdmPut from "../../pages/admPages/produto/PutProduto"
+import { Register } from "../../pages/Register";
 
 const Content = (props) => (
   <div>
@@ -28,8 +29,10 @@ const Content = (props) => (
       <Route path="/sobre" element={<About />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/adm" element={<Adm />} />
+<
       <Route path="/categoriaadm" element={<CategoriaAdm/>}></Route>
       <Route path="/categoriaadmpost" element={<CategoriaAdmPost/>}></Route>
       <Route path="/categoriaadmput/:id" element={<CategoriaAdmPut/>}></Route>
@@ -41,6 +44,21 @@ const Content = (props) => (
       <Route path="/funcionarioadmpost" element={<FuncionarioAdmPost/>}></Route>
       <Route path="/produtoadm" element={<ProdutoAdm/>}></Route>
       <Route path="/produtoadmput/:id" element={<ProdutoAdmPut/>}></Route>
+    </Routes> */}
+
+
+
+      {/* <Route path="/categoriaadm" element={<CategoriaAdm />}></Route>
+      <Route path="/categoriaadmpost" element={<CategoriaAdmPost />}></Route>
+      <Route path="/categoriaadmput/:id" element={<CategoriaAdmPut />}></Route>
+      <Route path="/clienteadm" element={<ClienteAdm />}></Route>
+      <Route path="/clienteadmput/:id" element={<ClienteAdmPut />}></Route>
+      <Route path="/clienteadmpost" element={<ClienteAdmPost />}></Route>
+      <Route path="/funcionarioadm" element={<FuncionarioAdm />}></Route>
+      <Route path="/funcionarioadmput/:id" element={<FuncionarioAdmPut />}></Route>
+      <Route path="/funcionarioadmpost" element={<FuncionarioAdmPost />}></Route>
+      <Route path="/produtoadm" element={<ProdutoAdm />}></Route>
+      <Route path="/produtoadmput/:id" element={<ProdutoAdmPut />}></Route>
     </Routes> */}
   </div>
 );

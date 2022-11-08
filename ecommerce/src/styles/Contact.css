@@ -8,11 +8,28 @@
   justify-content: center;
   gap: 4%;
   background-color: rgb(219, 219, 219);
+
+  background-image: url(../assets/banner_contato3.jpg);
+  background-size: cover;
+  background-position: 0rem;
+  background-size: cover;
+}
+
+.wrap-contato{
+  width: 48%;
+  background-color: rgba(14, 12, 12, 0.808);
+  border-radius: 4%;
+  overflow: hidden;
+  padding: 45px 25px 33px 25px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contato-titles {
   width: 100%;
-  color: black;
+  color: rgb(243, 235, 235);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,24 +42,25 @@
 }
 
 .main-form {
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .main-form-title {
-  color: black;
-  width: 38%;
+  color: rgb(243, 235, 235);
+  width: 70%;
 }
 
 .main-form input,
 .main-form textarea {
-  width: 38%;
+  width: 70%;
   padding-left: 10px;
-  border: none;
-  background-color: rgb(255, 255, 255);
+  border-color: white;
+  background-color:transparent;
 }
 
 .main-form input {
@@ -51,11 +69,11 @@
 
 .main-button {
   margin-top: 20px;
-  width: 38%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .button-v,
@@ -73,9 +91,7 @@
 }
 
 .button-e {
-  background-color: black;
-  border: none;
-  color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .button-v {
@@ -83,9 +99,28 @@
 }
 
 .button-e:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: black;
+    color: white;
 }
+
+@media  screen and (max-width: 668px) {
+  .contato-titles{
+    font-size: 0.6rem;
+    padding-inline: 4px;
+  }
+
+  .button-v,
+  .button-e {
+    padding-inline: 12px;
+    padding-block: 6px;
+  }
+
+  .wrap-contato{
+    width: 90%;
+  }
+
+}
+
 
 
 

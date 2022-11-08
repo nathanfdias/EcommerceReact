@@ -9,16 +9,15 @@ import icon2 from '../assets/home/icon2.png';
 import icon3 from '../assets/home/icon3.png';
 import icon4 from '../assets/home/icon4.png';
 import Footer from '../components/Footer';
-import { useContext } from 'react';
-import { AuthContext } from '../context/auth';
+// import { useContext } from 'react';
+// import { AuthContext } from '../context/auth';
+
 
 const Home = () => {
-
-    const {logout} = useContext(AuthContext);
-    const handleLogout = () =>{
-        logout();
-    };
-
+    // const {logout} = useContext(AuthContext);
+    // const handleLogout = () =>{
+    //     logout();
+    // };
     return(
         <>
             <div className="home">
@@ -108,7 +107,7 @@ const Home = () => {
                 </section>
                 <Footer />
             </div>
-            <button onClick={handleLogout}>TESTE LOGOUT</button>
+          
         </>
     )
 }
