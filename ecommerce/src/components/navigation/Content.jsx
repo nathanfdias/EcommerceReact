@@ -22,7 +22,7 @@ import { Register } from "../../pages/Register";
 
 const Content = (props) => (
   <div>
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/produtos" element={<Products />} />
       <Route path="/produtos/:id" element={<Produto />} />
@@ -32,7 +32,23 @@ const Content = (props) => (
       <Route path="/register" element={<Register />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/adm" element={<Adm />} />
-      <Route path="/categoriaadm" element={<CategoriaAdm />}></Route>
+<
+      <Route path="/categoriaadm" element={<CategoriaAdm/>}></Route>
+      <Route path="/categoriaadmpost" element={<CategoriaAdmPost/>}></Route>
+      <Route path="/categoriaadmput/:id" element={<CategoriaAdmPut/>}></Route>
+      <Route path="/clienteadm" element={<ClienteAdm/>}></Route>
+      <Route path="/clienteadmput/:id" element={<ClienteAdmPut/>}></Route>
+      <Route path="/clienteadmpost" element={<ClienteAdmPost/>}></Route>
+      <Route path="/funcionarioadm" element={<FuncionarioAdm/>}></Route>
+      <Route path="/funcionarioadmput/:id" element={<FuncionarioAdmPut/>}></Route>
+      <Route path="/funcionarioadmpost" element={<FuncionarioAdmPost/>}></Route>
+      <Route path="/produtoadm" element={<ProdutoAdm/>}></Route>
+      <Route path="/produtoadmput/:id" element={<ProdutoAdmPut/>}></Route>
+    </Routes> */}
+
+
+
+      {/* <Route path="/categoriaadm" element={<CategoriaAdm />}></Route>
       <Route path="/categoriaadmpost" element={<CategoriaAdmPost />}></Route>
       <Route path="/categoriaadmput/:id" element={<CategoriaAdmPut />}></Route>
       <Route path="/clienteadm" element={<ClienteAdm />}></Route>
@@ -43,7 +59,7 @@ const Content = (props) => (
       <Route path="/funcionarioadmpost" element={<FuncionarioAdmPost />}></Route>
       <Route path="/produtoadm" element={<ProdutoAdm />}></Route>
       <Route path="/produtoadmput/:id" element={<ProdutoAdmPut />}></Route>
-    </Routes>
+    </Routes> */}
   </div>
 );
 
